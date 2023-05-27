@@ -190,10 +190,10 @@ function Header() {
         <div id="react-modals">
           <Modal
             getContainer="#react-modals"
-            className={styles.modal}
             visible={isModalVisible}
             closable={false}
             footer={null}
+            width={"100%"}
           >
             {modalContent}
           </Modal>
