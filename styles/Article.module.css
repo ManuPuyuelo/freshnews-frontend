@@ -16,6 +16,24 @@
   justify-content: space-between;
   height: 40px;
 }
+.articleHeader a {
+  width: 85%;
+}
+
+.linkToArticle {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.articleTitle {
+  width: 100%;
+}
+
+.articleTitle:hover {
+  color: rgb(233, 190, 89);
+}
 
 .bookmarkIcon {
   cursor: pointer;
@@ -31,20 +49,4 @@
 
 .hideIcon:hover {
   opacity: 0.6;
-}
-
-.linkToArticle {
-  text-decoration: none;
-  color: black;
-  margin: 0;
-  padding: 0;
-  width: 85%;
-}
-
-.articleTitle {
-  width: 100%;
-}
-
-.articleTitle:hover {
-  color: rgb(233, 190, 89);
 }
