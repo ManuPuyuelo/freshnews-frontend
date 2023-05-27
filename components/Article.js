@@ -38,7 +38,9 @@ function Article(props) {
   return (
     <div className={styles.articles}>
       <div className={styles.articleHeader}>
-        <h3>{props.title}</h3>
+        <a className={styles.linkToArticle} href={props.url}>
+          <h3 className={styles.articleTitle}>{props.title}</h3>
+        </a>
         <FontAwesomeIcon
           onClick={() => handleBookmarkClick()}
           icon={faBookmark}
@@ -55,13 +57,15 @@ function Article(props) {
       </div>
       <h4 style={{ textAlign: "right" }}>- {props.author}</h4>
       <div className={styles.divider}></div>
-      <Image
-        src={props.urlToImage}
-        alt={props.title}
-        width={600}
-        height={314}
-      />
-      <p>{props.description}</p>
+      <a className={styles.linkToArticle} href={props.url}>
+        <Image
+          src={props.urlToImage}
+          alt={props.title}
+          width={600}
+          height={314}
+        />
+        <p>{props.description}</p>
+      </a>
     </div>
   );
 }
