@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addBookmark, removeBookmark } from "../reducers/bookmarks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+
 import styles from "../styles/TopArticle.module.css";
 
 function TopArticle(props) {
@@ -36,6 +37,7 @@ function TopArticle(props) {
   return (
     <div className={styles.topContainer}>
       <img src={props.urlToImage} className={styles.image} alt={props.title} />
+
       <div className={styles.topText}>
         <a className={styles.linkToArticle} href={props.url}>
           <h2 className={styles.topTitle}>{props.title}</h2>

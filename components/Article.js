@@ -58,12 +58,14 @@ function Article(props) {
       <h4 style={{ textAlign: "right" }}>- {props.author}</h4>
       <div className={styles.divider}></div>
       <a className={styles.linkToArticle} href={props.url}>
-        <Image
-          src={props.urlToImage}
-          alt={props.title}
-          width={600}
-          height={314}
-        />
+        {props.urlToImage && (
+          <Image
+            src={props.urlToImage}
+            alt={props.title}
+            width={600}
+            height={314}
+          />
+        )}
         <p>{props.description}</p>
       </a>
     </div>
