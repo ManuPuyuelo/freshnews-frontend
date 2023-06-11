@@ -1,4 +1,4 @@
-# Freshnews - Frontend
+# 📰 Freshnews - Frontend
 
 Real-time news web & mobile site 
 
